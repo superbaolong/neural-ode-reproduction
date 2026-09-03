@@ -60,9 +60,12 @@ def main():
             params = sum(p.numel() for p in model.parameters())
             print(f"\n{name} rtol={rtol:g} params={params:,} device={device} adjoint={args.adjoint}")
             for epoch in range(1, args.epochs + 1):
+                if device.type == "cuda":
+                    torch.cuda.reset_peak_memory_stats(device)
                 tr = run_epoch(model, train_loader, optimizer, device, True, args.max_train_batches)
+                peak_memory_mb = (torch.cuda.max_memory_allocated(device) / (1024 ** 2)) if device.type == "cuda" else 0.0
                 with torch.no_grad(): te = run_epoch(model, test_loader, optimizer, device, False, args.max_test_batches)
-                row = {"model": name, "rtol": rtol, "epoch": epoch, "params": params, "train_loss": tr["loss"], "train_accuracy": tr["accuracy"], "test_loss": te["loss"], "test_accuracy": te["accuracy"], "train_seconds": tr["seconds"], "test_seconds": te["seconds"], "nfe_mean": tr["nfe_mean"], "adjoint": args.adjoint, "seed": args.seed}
+                row = {"model": name, "rtol": rtol, "epoch": epoch, "params": params, "train_loss": tr["loss"], "train_accuracy": tr["accuracy"], "test_loss": te["loss"], "test_accuracy": te["accuracy"], "train_seconds": tr["seconds"], "test_seconds": te["seconds"], "nfe_mean": tr["nfe_mean"], "peak_memory_mb": peak_memory_mb, "adjoint": args.adjoint, "seed": args.seed}
                 all_rows.append(row); print(f"epoch={epoch:02d} train_acc={tr['accuracy']:.4f} test_acc={te['accuracy']:.4f} nfe={tr['nfe_mean']:.1f} time={tr['seconds']:.1f}s")
     fields = list(all_rows[0]) if all_rows else []
     with (out / "metrics.csv").open("w", newline="") as f:
@@ -72,3 +75,4 @@ def main():
 
 
 if __name__ == "__main__": main()
+
