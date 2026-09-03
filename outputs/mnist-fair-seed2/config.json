@@ -1,0 +1,18 @@
+{
+  "model": "both",
+  "epochs": 5,
+  "batch_size": 64,
+  "lr": 0.001,
+  "channels": 32,
+  "adjoint": false,
+  "rtol": 0.001,
+  "atol": 1e-05,
+  "tolerances": null,
+  "seed": 2,
+  "data_dir": "data/mnist",
+  "workers": 0,
+  "max_train_batches": null,
+  "max_test_batches": null,
+  "output_dir": "outputs/mnist-fair-seed2",
+  "device": "cuda"
+}
