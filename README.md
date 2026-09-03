@@ -63,3 +63,11 @@ $env:PYTHONNOUSERSITE = '1'
 - `src/mnist_experiment.py` 的 tolerance sweep 对应精度与计算量权衡。
 
 这是一套可在个人电脑上完成的代表性复现，不声称重新完成论文所需的大规模预训练或逐数值复刻所有表格。
+
+## 已完成结果
+
+- Spiral：300 epochs，最终 MSE 约 `9.04e-4`，见 [`outputs/spiral-baseline`](outputs/spiral-baseline)。
+- MNIST 主实验：ResNet 5 epochs 测试准确率 `93.02%`；ODENet 3 epochs 测试准确率 `96.48%`，见 [`outputs/mnist-summary.md`](outputs/mnist-summary.md)。
+- Direct/Adjoint 短对照：Adjoint 峰值显存约 `139 MB`，Direct 约 `397 MB`，见 [`outputs/adjoint-summary.md`](outputs/adjoint-summary.md)。
+- 容差短实验：`rtol=1e-3/1e-5/1e-7` 的 NFE 约为 `38.0/38.9/39.2`，见 [`outputs/tolerance-summary.md`](outputs/tolerance-summary.md)。
+
