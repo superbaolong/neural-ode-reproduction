@@ -1,0 +1,8 @@
+{
+  "epochs": 300,
+  "n_points": 200,
+  "lr": 0.01,
+  "seed": 0,
+  "output_dir": "outputs/spiral-baseline",
+  "device": "cuda"
+}
