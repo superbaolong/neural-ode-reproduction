@@ -1,0 +1,22 @@
+{
+  "model": "odenet",
+  "epochs": 1,
+  "batch_size": 64,
+  "lr": 0.001,
+  "channels": 32,
+  "adjoint": false,
+  "rtol": 0.001,
+  "atol": 1e-05,
+  "tolerances": [
+    0.001,
+    1e-05,
+    1e-07
+  ],
+  "seed": 0,
+  "data_dir": "data/mnist",
+  "workers": 0,
+  "max_train_batches": 20,
+  "max_test_batches": 20,
+  "output_dir": "outputs/tolerance-20",
+  "device": "cuda"
+}
