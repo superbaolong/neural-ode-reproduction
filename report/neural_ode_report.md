@@ -28,7 +28,7 @@ $$
 \frac{d\mathbf{h}(t)}{dt}=f_\theta(\mathbf{h}(t),t),
 $$
 
-其中，$\mathbf{h}(t)$ 是连续时间下的隐藏状态，$f_\theta$ 是由神经网络参数化的向量场。给定初始状态 $\mathbf{h}(t_0)$，输出状态为
+其中， $\mathbf{h}(t)$ 是连续时间下的隐藏状态， $f_\theta$ 是由神经网络参数化的向量场。给定初始状态 $\mathbf{h}(t_0)$，输出状态为
 
 $$
 \mathbf{h}(t_1)=\mathbf{h}(t_0)+
