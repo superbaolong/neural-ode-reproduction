@@ -67,7 +67,7 @@ $env:PYTHONNOUSERSITE = '1'
 ## 已完成结果
 
 - Spiral：300 epochs，最终 MSE 约 `9.04e-4`，见 [`outputs/spiral-baseline`](outputs/spiral-baseline)。
-- MNIST 主实验：ResNet 5 epochs 测试准确率 `93.02%`；ODENet 3 epochs 测试准确率 `96.48%`，见 [`outputs/mnist-summary.md`](outputs/mnist-summary.md)。
+- MNIST 公平实验（seed 0）：相同设置训练 5 epochs，ODENet 最终测试准确率 `98.33%`，ResNet 最终为 `87.51%`、最佳为 `91.01%`，见 [`outputs/mnist-fair-seed0/summary.md`](outputs/mnist-fair-seed0/summary.md)。
 - Direct/Adjoint 短对照：Adjoint 峰值显存约 `139 MB`，Direct 约 `397 MB`，见 [`outputs/adjoint-summary.md`](outputs/adjoint-summary.md)。
 - 容差短实验：`rtol=1e-3/1e-5/1e-7` 的 NFE 约为 `38.0/38.9/39.2`，见 [`outputs/tolerance-summary.md`](outputs/tolerance-summary.md)。
 
