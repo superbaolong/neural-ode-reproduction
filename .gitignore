@@ -1,0 +1,19 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Downloaded datasets (re-downloadable; do not commit raw MNIST files)
+data/mnist/
+
+# Large training artifacts
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+
+# Local experiment logs that may contain machine-specific paths
+wandb/
+*.log
