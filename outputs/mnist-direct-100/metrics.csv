@@ -1,0 +1,2 @@
+model,rtol,epoch,params,train_loss,train_accuracy,test_loss,test_accuracy,train_seconds,test_seconds,nfe_mean,peak_memory_mb,adjoint,seed
+odenet,0.001,1,19274,2.060100839138031,0.2290625,1.9087692034244537,0.31578125,15.867,7.008071599999997,38.0,397.23095703125,False,0
