@@ -9,6 +9,8 @@
 
 代码默认使用 FP32，避免低显存设备上 ODE 数值不稳定。MNIST 使用原始 IDX 文件加载器，不依赖 torchvision。
 
+完整中文报告草稿见 [`report/neural_ode_report.md`](report/neural_ode_report.md)。
+
 ## 安装
 
 本项目固定使用已有的 D 盘环境，不直接调用系统 `python`：
