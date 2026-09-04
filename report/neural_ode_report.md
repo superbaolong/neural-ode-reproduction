@@ -194,11 +194,9 @@ Adjoint 将峰值显存降低约 65%，但训练时间约为 Direct 的 1.7 倍�
 
 ## 参考文献
 
-[1] Chen, R. T. Q., Rubanova, Y., Bettencourt, J., & Duvenaud, D. K. Neural Ordinary Differential Equations. *Advances in Neural Information Processing Systems 31*, 2018. https://proceedings.neurips.cc/paper/2018/hash/69386f6bb1dfed68692a24c8686939b9-Abstract.html
+[1] Chen, R. T. Q., Rubanova, Y., Bettencourt, J., & Duvenaud, D. K. Neural Ordinary Differential Equations. *Advances in Neural Information Processing Systems 31*, 2018. [NeurIPS](https://proceedings.neurips.cc/paper/2018/hash/69386f6bb1dfed68692a24c8686939b9-Abstract.html)；[arXiv:1806.07366](https://arxiv.org/abs/1806.07366)。
 
-[2] Chen, R. T. Q. et al. Neural Ordinary Differential Equations. arXiv:1806.07366. https://arxiv.org/abs/1806.07366
-
-[3] Chen, R. T. Q. `torchdiffeq`: Differentiable ODE solvers with full GPU support and adjoint sensitivity methods. https://github.com/rtqichen/torchdiffeq
+[2] Chen, R. T. Q. `torchdiffeq`: Differentiable ODE solvers with full GPU support and adjoint sensitivity methods. https://github.com/rtqichen/torchdiffeq
 
 ## 附录：主要运行命令
 

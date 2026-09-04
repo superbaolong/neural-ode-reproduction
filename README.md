@@ -133,6 +133,5 @@ python -m src.plot_mnist_comparison \
 
 ## 参考资料
 
-- [Neural Ordinary Differential Equations（NeurIPS 2018）](https://proceedings.neurips.cc/paper/2018/hash/69386f6bb1dfed68692a24c8686939b9-Abstract.html)
-- [arXiv:1806.07366](https://arxiv.org/abs/1806.07366)
+- Chen et al., *Neural Ordinary Differential Equations*（2018）：[NeurIPS 正式发表页](https://proceedings.neurips.cc/paper/2018/hash/69386f6bb1dfed68692a24c8686939b9-Abstract.html) · [arXiv 预印本](https://arxiv.org/abs/1806.07366)
 - [`torchdiffeq` 官方实现](https://github.com/rtqichen/torchdiffeq)
