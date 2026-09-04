@@ -17,3 +17,6 @@ checkpoints/
 # Local experiment logs that may contain machine-specific paths
 wandb/
 *.log
+
+# Temporary transfer archives
+*.zip

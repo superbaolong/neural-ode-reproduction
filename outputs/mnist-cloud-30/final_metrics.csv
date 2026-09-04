@@ -1,0 +1,3 @@
+model,seed,epochs,train_accuracy,test_accuracy,device
+odenet,0,30,0.99415,0.9927,NVIDIA RTX 5090
+resnet,0,30,0.9752666666666666,0.9754,NVIDIA RTX 5090
