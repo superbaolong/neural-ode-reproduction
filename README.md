@@ -71,7 +71,7 @@ $env:PYTHONNOUSERSITE = '1'
 - Spiral：300 epochs，最终 MSE 约 `9.04e-4`，见 [`outputs/spiral-baseline`](outputs/spiral-baseline)。
 - MNIST 公平实验（seed 0）：相同设置训练 5 epochs，ODENet 最终测试准确率 `98.33%`，ResNet 最终为 `87.51%`、最佳为 `91.01%`，见 [`outputs/mnist-fair-seed0/summary.md`](outputs/mnist-fair-seed0/summary.md)。
 - MNIST 公平实验（seed 1、2）：ODENet 最佳测试准确率分别为 `97.56%`、`98.10%`，ResNet 分别为 `93.35%`、`92.69%`；三个 seed 的均值和标准差见 [`outputs/mnist-fair-summary.md`](outputs/mnist-fair-summary.md)。
-- MNIST 云端 30-epoch 补充实验（seed 0）：ODENet 最终测试准确率 `99.27%`，ResNet 最终为 `97.54%`，说明 5 个 epoch 时两种模型尤其是 ResNet 尚未充分收敛，见 [`outputs/mnist-cloud-30/summary.md`](outputs/mnist-cloud-30/summary.md)。
+- MNIST 云端 30-epoch 补充实验（seed 0）：ODENet 最佳/最终测试准确率为 `99.32%/99.27%`，ResNet 为 `97.54%/97.54%`；完整 60 条逐轮指标、配置和训练曲线见 [`outputs/mnist-cloud-30`](outputs/mnist-cloud-30)。
 - Direct/Adjoint 短对照：Adjoint 峰值显存约 `139 MB`，Direct 约 `397 MB`，见 [`outputs/adjoint-summary.md`](outputs/adjoint-summary.md)。
 - 容差短实验：`rtol=1e-3/1e-5/1e-7` 的 NFE 约为 `38.0/38.9/39.2`，见 [`outputs/tolerance-summary.md`](outputs/tolerance-summary.md)。
 
